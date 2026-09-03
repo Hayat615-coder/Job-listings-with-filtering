@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>job-listings</title>
+  </head>
+  <body
+    class="flex flex-col bg-[hsl(180,52%,96%)] min-h-screen text-[15px] font-league-spartan"
+  >
+    <header
+      class="bg-[hsl(180,29%,50%)] bg-[url('./src/assets/bg-header-mobile.svg')] md:bg-[url('./src/assets/bg-header-desktop.svg')] w-full bg-no-repeat bg-cover bg-center h-39 md:h-50"
+    ></header>
+    <main
+      class="grow relative -top-10 md:-top-12 flex items-center justify-center mt-24"
+    >
+      <ul class="md:w-full px-8 max-w-5xl md:px-0">
+        <li
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
+          >
+            <img
+              class="absolute -top-6 left-6 w-12 h-12 md:static md:w-20 md:h-20 rounded-full object-cover"
+              src="./src/assets/photosnap.svg"
+              alt="photo snap"
+            />
+
+            <div>
+              <p
+                class="text-[hsl(180,29%,50%)] font-bold flex gap-2 items-center"
+              >
+                photo snap
+                <span
+                  class="text-white bg-[hsl(180,29%,50%)] rounded-2xl p-1 px-2 text-xs"
+                  >NEW!</span
+                >
+                <span class="text-white bg-black rounded-2xl py-1 px-2 text-xs"
+                  >FEATURED</span
+                >
+              </p>
+              <p
+                class="text-black font-bold pt-1 hover:text-[hsl(180,29%,50%)] cursor-pointer"
+              >
+                Senior Frontend Developer
+              </p>
+              <p class="text-gray-500 flex gap-2 items-center py-2 text-sm">
+                1d ago • Full Time • USA only
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full border-gray-300 my-4 md:hidden" />
+
+          <div
+            class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
+          >
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Frontend
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Senior
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              HTML
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              CSS
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              JavaScript
+            </button>
+          </div>
+        </li>
+        <li
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
+          >
+            <img
+              class="absolute -top-6 left-6 w-12 h-12 md:static md:w-20 md:h-20 rounded-full object-cover"
+              src="./src/assets/manage.svg"
+              alt="manage"
+            />
+
+            <div>
+              <p
+                class="text-[hsl(180,29%,50%)] font-bold flex gap-2 items-center"
+              >
+                Manage
+                <span
+                  class="text-white bg-[hsl(180,29%,50%)] rounded-2xl p-1 px-2 text-xs"
+                  >NEW!</span
+                >
+                <span class="text-white bg-black rounded-2xl py-1 px-2 text-xs"
+                  >FEATURED</span
+                >
+              </p>
+              <p
+                class="text-black font-bold pt-1 hover:text-[hsl(180,29%,50%)] cursor-pointer"
+              >
+                Fullstack Developer
+              </p>
+              <p class="text-gray-500 flex gap-x-4 items-center py-2 text-sm">
+                1d ago • part Time • Remote
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full border-gray-300 my-4 md:hidden" />
+
+          <div
+            class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
+          >
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Fullstack
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Midweight
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Python
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              React
+            </button>
+          </div>
+        </li>
+        <li
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
+          >
+            <img
+              class="absolute -top-6 left-6 w-12 h-12 md:static md:w-20 md:h-20 rounded-full object-cover"
+              src="./src/assets/account.svg"
+              alt="account"
+            />
+
+            <div>
+              <p
+                class="text-[hsl(180,29%,50%)] font-bold flex gap-2 items-center"
+              >
+                Account
+                <span
+                  class="text-white bg-[hsl(180,29%,50%)] rounded-2xl p-1 px-2 text-xs"
+                  >NEW!</span
+                >
+              </p>
+              <p
+                class="text-black font-bold pt-1 hover:text-[hsl(180,29%,50%)] cursor-pointer"
+              >
+                Junior Frontend Developer
+              </p>
+              <p class="text-gray-500 flex gap-2 items-center py-2 text-sm">
+                2d ago • Part Time • USA only
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full border-gray-300 my-4 md:hidden" />
+
+          <div
+            class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
+          >
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Frontend
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Junior
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              React
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Sass
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              JavaScript
+            </button>
+          </div>
+        </li>
+        <li
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
+          >
+            <img
+              class="absolute -top-6 left-6 w-12 h-12 md:static md:w-20 md:h-20 rounded-full object-cover"
+              src="./src/assets/myhome.svg"
+              alt="MyHome"
+            />
+
+            <div>
+              <p
+                class="text-[hsl(180,29%,50%)] font-bold flex gap-2 items-center"
+              >
+                MyHome
+              </p>
+              <p
+                class="text-black font-bold pt-1 hover:text-[hsl(180,29%,50%)] cursor-pointer"
+              >
+                Junior Frontend Developer
+              </p>
+              <p class="text-gray-500 flex gap-2 items-center py-2 text-sm">
+                5d ago • Contract • USA only
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full border-gray-300 my-4 md:hidden" />
+
+          <div
+            class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
+          >
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Frontend
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Junior
+            </button>
+
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              CSS
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              JavaScript
+            </button>
+          </div>
+        </li>
+        <li
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
+          >
+            <img
+              class="absolute -top-6 left-6 w-12 h-12 md:static md:w-20 md:h-20 rounded-full object-cover"
+              src="./src/assets/loop-studios.svg"
+              alt="Loop Studios"
+            />
+
+            <div>
+              <p
+                class="text-[hsl(180,29%,50%)] font-bold flex gap-2 items-center"
+              >
+                Loop Studios
+              </p>
+              <p
+                class="text-black font-bold pt-1 hover:text-[hsl(180,29%,50%)] cursor-pointer"
+              >
+                Software Engineer
+              </p>
+              <p class="text-gray-500 flex gap-2 items-center py-2 text-sm">
+                1w ago • Full Time • worldwide
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full border-gray-300 my-4 md:hidden" />
+
+          <div
+            class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
+          >
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Fullstack
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              midweight
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              javascript
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Sass
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Ruby
+            </button>
+          </div>
+        </li>
+        <li
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
+          >
+            <img
+              class="absolute -top-6 left-6 w-12 h-12 md:static md:w-20 md:h-20 rounded-full object-cover"
+              src="./src/assets/faceit.svg"
+              alt="faceit"
+            />
+
+            <div>
+              <p
+                class="text-[hsl(180,29%,50%)] font-bold flex gap-2 items-center"
+              >
+                FaceIt
+              </p>
+              <p
+                class="text-black font-bold pt-1 hover:text-[hsl(180,29%,50%)] cursor-pointer"
+              >
+                Junior Backend Developer
+              </p>
+              <p class="text-gray-500 flex gap-2 items-center py-2 text-sm">
+                2w ago • Full Time • UK only
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full border-gray-300 my-4 md:hidden" />
+
+          <div
+            class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
+          >
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Backend
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Junior
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Ruby
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              RoR
+            </button>
+          </div>
+        </li>
+        <li
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
+          >
+            <img
+              class="absolute -top-6 left-6 w-12 h-12 md:static md:w-20 md:h-20 rounded-full object-cover"
+              src="./src/assets/shortly.svg"
+              alt="shortly"
+            />
+
+            <div>
+              <p
+                class="text-[hsl(180,29%,50%)] font-bold flex gap-2 items-center"
+              >
+                Shortly
+              </p>
+              <p
+                class="text-black font-bold pt-1 hover:text-[hsl(180,29%,50%)] cursor-pointer"
+              >
+                Junior Developer
+              </p>
+              <p class="text-gray-500 flex gap-2 items-center py-2 text-sm">
+                2w ago • Full Time • USA only
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full border-gray-300 my-4 md:hidden" />
+
+          <div
+            class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
+          >
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Frontend
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Junior
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              HTML
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Saas
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              JavaScript
+            </button>
+          </div>
+        </li>
+        <li
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
+          >
+            <img
+              class="absolute -top-6 left-6 w-12 h-12 md:static md:w-20 md:h-20 rounded-full object-cover"
+              src="./src/assets/insure.svg"
+              alt="insure"
+            />
+
+            <div>
+              <p
+                class="text-[hsl(180,29%,50%)] font-bold flex gap-2 items-center"
+              >
+                Insure
+              </p>
+              <p
+                class="text-black font-bold pt-1 hover:text-[hsl(180,29%,50%)] cursor-pointer"
+              >
+                Junior Frontend Developer
+              </p>
+              <p class="text-gray-500 flex gap-2 items-center py-2 text-sm">
+                2w ago • Full Time • USA only
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full border-gray-300 my-4 md:hidden" />
+
+          <div
+            class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
+          >
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Frontend
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Junior
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Vue
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              JavaScript
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Saas
+            </button>
+          </div>
+        </li>
+        <li
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
+          >
+            <img
+              class="absolute -top-6 left-6 w-12 h-12 md:static md:w-20 md:h-20 rounded-full object-cover"
+              src="./src/assets/eyecam-co.svg"
+              alt="eyecam-co"
+            />
+
+            <div>
+              <p
+                class="text-[hsl(180,29%,50%)] font-bold flex gap-2 items-center"
+              >
+                Eyecam-Co.
+              </p>
+              <p
+                class="text-black font-bold pt-1 hover:text-[hsl(180,29%,50%)] cursor-pointer"
+              >
+                Full Stack Engineer
+              </p>
+              <p class="text-gray-500 flex gap-2 items-center py-2 text-sm">
+                3w ago • Full Time • Worldwide
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full border-gray-300 my-4 md:hidden" />
+
+          <div
+            class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
+          >
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Fullstack
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Midweight
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Javascript
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Django
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Python
+            </button>
+          </div>
+        </li>
+        <li
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
+          >
+            <img
+              class="absolute -top-6 left-6 w-12 h-12 md:static md:w-20 md:h-20 rounded-full object-cover"
+              src="./src/assets/the-air-filter-company.svg"
+              alt="the-air-filter-company"
+            />
+
+            <div>
+              <p
+                class="text-[hsl(180,29%,50%)] font-bold flex gap-2 items-center"
+              >
+                The Air Filter Company
+              </p>
+              <p
+                class="text-black font-bold pt-1 hover:text-[hsl(180,29%,50%)] cursor-pointer"
+              >
+                Front-end Dev
+              </p>
+              <p class="text-gray-500 flex gap-2 items-center py-2 text-sm">
+                1mo ago • Part Time • Worldwide
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-full border-gray-300 my-4 md:hidden" />
+
+          <div
+            class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
+          >
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Frontend
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Junior
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              React
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              Saas
+            </button>
+            <button
+              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+            >
+              JavaScript
+            </button>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
