@@ -19,42 +19,12 @@
       class="bg-[hsl(180,29%,50%)] bg-[url('./src/assets/bg-header-mobile.svg')] md:bg-[url('./src/assets/bg-header-desktop.svg')] w-full bg-no-repeat bg-cover bg-center h-39 md:h-50"
     ></header>
     <div
-      class="w-full relative -top-7 p-4 flex items-center justify-between flex-row bg-white shadow-md rounded-lg max-w-5xl mx-auto"
+      id="filter-container"
+      class="hidden w-full relative -top-7 p-4 flex items-center justify-between flex-row bg-white shadow-md rounded-lg max-w-5xl mx-auto"
     >
-      <div class="flex gap-4 flex-wrap">
-        <button
-          class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] flex flex-row gap-2 items-center font-bold rounded-sm px-2 py-1 text-md cursor-pointer"
-        >
-          Frontend
-          <img
-            class="text-white bg-[hsl(180,29%,50%)] hover:bg-black w-full h-full rounded-sm p-2 cursor-pointer"
-            src="./src/assets/icon-remove.svg"
-            alt="Remove"
-          />
-        </button>
-        <button
-          class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] flex flex-row gap-2 items-center font-bold rounded-sm px-2 py-1 text-md cursor-pointer"
-        >
-          Senior
-          <img
-            class="text-white bg-[hsl(180,29%,50%)] hover:bg-black w-full h-full rounded-sm p-2 cursor-pointer"
-            src="./src/assets/icon-remove.svg"
-            alt="Remove"
-          />
-        </button>
-        <button
-          class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] flex flex-row gap-2 items-center font-bold rounded-sm px-2 py-1 text-md cursor-pointer"
-        >
-          HTML
-          <img
-            class="text-white bg-[hsl(180,29%,50%)] hover:bg-black w-full h-full rounded-sm p-2 cursor-pointer"
-            src="./src/assets/icon-remove.svg"
-            alt="Remove"
-          />
-        </button>
-      </div>
+      <div class="inner-filter flex gap-4 flex-wrap items-start"></div>
       <button
-        class="text-[hsl(180,29%,50%)] hover:underline font-bold rounded-sm px-2 py-1 text-md cursor-pointer"
+        class="clear text-[hsl(180,29%,50%)] hover:underline font-bold rounded-sm px-2 py-1 text-md cursor-pointer"
       >
         clear
       </button>
@@ -195,7 +165,7 @@
           </div>
         </li>
         <li
-          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-md"
         >
           <div
             class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
@@ -233,34 +203,34 @@
             class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
           >
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="frontend text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Frontend
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="junior text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Junior
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="react text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               React
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="sass text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Sass
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="javascript text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               JavaScript
             </button>
           </div>
         </li>
         <li
-          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-md"
         >
           <div
             class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
@@ -294,30 +264,30 @@
             class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
           >
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="frontend text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Frontend
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="junior text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Junior
             </button>
 
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="css text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               CSS
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="javascript text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               JavaScript
             </button>
           </div>
         </li>
         <li
-          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-md"
         >
           <div
             class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
@@ -351,34 +321,34 @@
             class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
           >
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="fullstack text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Fullstack
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="midweight text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               midweight
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="javascript text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               javascript
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="sass text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Sass
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="ruby text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Ruby
             </button>
           </div>
         </li>
         <li
-          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-md"
         >
           <div
             class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
@@ -412,29 +382,29 @@
             class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
           >
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="backend text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Backend
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="junior text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Junior
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="ruby text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Ruby
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="ror text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               RoR
             </button>
           </div>
         </li>
         <li
-          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-md"
         >
           <div
             class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
@@ -468,34 +438,34 @@
             class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
           >
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="frontend text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Frontend
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="junior text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Junior
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="html text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               HTML
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="saas text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Saas
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="javascript text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               JavaScript
             </button>
           </div>
         </li>
         <li
-          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-md"
         >
           <div
             class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
@@ -529,34 +499,34 @@
             class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
           >
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="frontend text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Frontend
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="junior text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Junior
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="vue text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Vue
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="javascript text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               JavaScript
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="saas text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Saas
             </button>
           </div>
         </li>
         <li
-          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-md"
         >
           <div
             class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
@@ -590,34 +560,34 @@
             class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
           >
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="fullstack text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Fullstack
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="midweight text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Midweight
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="javascript text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Javascript
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="django text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Django
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="python text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Python
             </button>
           </div>
         </li>
         <li
-          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-[-10px_0px_0_-5px_hsl(180,29%,50%)]"
+          class="relative flex flex-col md:flex-row items-start md:items-center justify-between md:gap-16 bg-white p-6 pt-12 md:pt-6 rounded-lg mb-6 shadow-md"
         >
           <div
             class="flex flex-col md:flex-row gap-4 items-start md:items-center w-full md:w-auto"
@@ -651,27 +621,27 @@
             class="flex flex-wrap items-center gap-4 md:gap-6 w-full md:w-auto"
           >
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="frontend text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Frontend
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="junior text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Junior
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="react text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               React
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="saas text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               Saas
             </button>
             <button
-              class="text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
+              class="javascript text-[hsl(180,29%,50%)] bg-[hsl(180,29%,96%)] hover:bg-[hsl(180,29%,50%)] hover:text-white font-bold rounded-sm px-2 py-1 text-sm cursor-pointer"
             >
               JavaScript
             </button>
